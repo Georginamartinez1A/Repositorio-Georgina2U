@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+long long padovan(int n) {
+    if(n==0||n==1||n==2)      //1, 1, 1, 2, 2, 3, 4, 5, 7, 9, ...
+    return 1;                 //        1+2=3
+return padovan(n-2)+padovan(n-3);
+}
+int main() {
+    int n;
+    cout<<"Ingrese el numero de terminos: ";
+    cin>>n;
+    cout<<"La Sucesión de Padovan es: "<<endl;
+    for (int i=0; i<n; i++) {
+        cout<<padovan(i)<<", ";
+    }
+    return 0;
+}
