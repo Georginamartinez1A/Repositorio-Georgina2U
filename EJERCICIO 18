@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int Suma(int nums1, int nums2) {
+    return nums1+nums2;
+}
+int main() {
+    cout<<Suma(2, 3);
+    return 0;
+}
