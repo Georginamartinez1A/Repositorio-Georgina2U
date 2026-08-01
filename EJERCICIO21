@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int f(int n) {
+    double r=1;
+    for (int i=1; i<=n; i++) {
+        r=r+i;
+    }
+    return r;
+}
+int main() {
+    cout<<f(3)<<endl; 
+    cout<<f(4)<<endl;
+    return 0;
+}
