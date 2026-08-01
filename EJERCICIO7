@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main () {
+    int A[5]={10, 20, 30, 40, 50};
+    for (i=0; i<n; i++) {
+        A[i]*=2;
+    }
+    for (i=0; i<n; i++) {
+        cout<<A[i]<<" ";
+    }
+    return 0;
+}
