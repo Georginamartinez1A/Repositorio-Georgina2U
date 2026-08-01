@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int i, n;
+    int A[n];
+    cout<<"Ingrese el numero de terminos n: ";
+    cin>>n;
+    for(i=0; i<n; i++) {
+        if(i%2==1) {
+            A[i]=1;
+        } else {
+            A[i]=0;
+        }
+        cout<< A[i]<<", ";
+    }
+    return 0;
+}
