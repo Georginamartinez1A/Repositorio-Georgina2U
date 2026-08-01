@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+    int sumar(int n) {      //Suma de los n primeros numeros naturales
+        if(n==1) {
+            return 1;
+        } else {
+            return n+sumar(n-1);
+        }
+    }
+    int main () {
+        cout<<sumar(4)<<endl;
+        return 0;
+    }
