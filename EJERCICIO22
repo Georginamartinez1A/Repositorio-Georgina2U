@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+    int potencia(int b; int p) {
+        int pot=1;
+        for (int i=1; i<=p; i++) {
+            pot*=b;
+        }
+        return pot;
+    }
+    int main() {
+        int a, b;
+        cout<<"Ingrese la base: ";
+        cin>>a;
+        cout<<"Ingrese la potencia; ";
+        cin>>b;
+        cout<<"El resultado es: "<<potencia(a, b)<<endl;
+        return 0;
+    }
