@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int Suma(int nums1, int nums2) {
+    return nums1+nums2;
+}
+int main() {
+    int a, b;
+    cin>>a>>b;
+    cout<<Suma(a, b)<<" ";
+    //cout<<Suma(7, 7)<<" ";
+    return 0;
+}
