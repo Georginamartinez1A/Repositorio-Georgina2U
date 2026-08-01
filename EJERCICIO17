@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int C[10]={10, 20, 30, 40, 50, 15, 25, 35, 45, 55};
+    int A[5], B[5], i=0;
+    while(i<5) {
+        A[i]=C[i];
+        B[i]=C[i+5];
+        i++;
+    }
+    cout<<"A[5]= ";
+    i=0;
+    while(i<5) {
+        cout<<B[i]<<" ";
+        i++;
+    }
+    return 0;
+}
