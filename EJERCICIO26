@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+long long pell(int n) {
+    if (n==0)             //0, 1, 2, 5, 12, 29, 70, 169, 408, ...
+    return 0;             //     2*2+1=5
+    if (n==1)
+    return 1;
+return 2*pell(n-1)+pell(n-2);
+}
+int main() {
+    int n;
+    cout<<"Ingrese el numero de terminos: ";
+    cin>>n;
+    cout<<"La Sucesión de Pell es: "<<endl;
+    for (int i=0; i<n; i++) {
+        cout<<pell(i)<<", ";
+    }
+    return 0; 
+}
